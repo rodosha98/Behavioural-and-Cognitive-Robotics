@@ -24,6 +24,10 @@ To launch jupiter notebook use:
 ``` bash
 jupyter notebook --ip=0.0.0.0 --port=8888
 ```
+To open remote Desktop, write in your browser 
+``` bash
+localhost:6080 (or 8888)
+```
 # Advices
 You can connect your container with VScode application. You will need to attach VScode window to launched container.
 
