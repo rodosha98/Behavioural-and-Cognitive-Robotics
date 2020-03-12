@@ -25,6 +25,6 @@ To launch jupiter notebook use:
 jupyter notebook --ip=0.0.0.0 --port=8888
 ```
 # Advices
-You can connect your container with VScode application.
+You can connect your container with VScode application. You will need to attach VScode window to launched container.
 
 The working directory is /opt for a reason. If you restart the container, the files will only be saved within this folder.
