@@ -101,3 +101,8 @@ In my case, the result is:
 Average Generalization: -66.64 +-1.52 (12 S*.fit files)\
  ```
 I've attached images(plots) to the repository. Also I've added all files with models in my repo.
+Here you can see plot of perfomance with different seeds:
+![Alt text](https://github.com/rodosha98/Behavioural-and-Cognitive-Robotics/blob/master/Exercise3/plot.jpg "Behavoural plot")
+On that plot we can see that algorithm converged with any value of seed and in the end it's very similar. 
+And here is the example of simulation(seed 7)
+![Alt text](https://github.com/rodosha98/Behavioural-and-Cognitive-Robotics/blob/master/Exercise3/robot.jpg "An example of simulation")
