@@ -19,6 +19,20 @@ Components of the modified version and main differences. It has the same compone
 * angle_offset_cost - in addition we measure the angle to the target and this term is the penalty that shows how much is angle offset between the robot and the target.
 Reward function were changed for each type of robot, because they have different structures, moving important parts, etc.
 
+# How to launch model:
+1. Use commands to build the net in the ./lib directory:
+``` bash
+python3 setupevonet.py build_ext --inplace
+cp net*.so ../bin # or cp net*.dll ../bin
+```
+2. Launch learning process(from the model.ini directory)
+``` bash
+python3 ../bin/es.py -f (model name).ini -s (number of seed)
+```
+3. See results(behavior)
+``` bash
+python3 ../bin/es.py -f (model name).ini  -t (bestmodel.npy)
+```
 I've launched the algorithm for hopper and halfcheetah models and humanoid with both of reward functions. In case of original rewarding function, the robot can't move toward the target, it either falls down(hopper) or get stucked(cheetah), i.e. legs are moving, but the whole robot can't move properly.  Modified function gave better results, and agents are able to move forward the goal. 
 
 #### 
