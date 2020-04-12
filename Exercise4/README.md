@@ -1,6 +1,6 @@
 # Task 4: 
 ## Evolve solution for one locomotion problem with the original (for reinforcement learning) and the modified (for evolutionary algorithms) reward functions.
- 
+
 > Describe the difference between the two functions. Describe how the behaviour of the evolved robots differ.
 We have target point and want the robot to move to it in both cases. 
 Reward function of original version is comprised of:
@@ -18,6 +18,7 @@ Components of the modified version and main differences. It has the same compone
 * feet_cost and feet_collision_cost - allows to calculate feet contacts and shows if both of the feet on the ground or not.  Also, there is condition rule that gives penalty -1.0 if both feet not on the ground, and -0.33 if both feet on the ground somehow
 * angle_offset_cost - in addition we measure the angle to the target and this term is the penalty that shows how much is angle offset between the robot and the target.
 Reward function were changed for each type of robot, because they have different structures, moving important parts, etc.
+
 
 I've launched the algorithm for hopper and halfcheetah models and humanoid with both of reward functions. In case of original rewarding function, the robot can't move toward the target, it either falls down(hopper) or get stucked(cheetah), i.e. legs are moving, but the whole robot can't move properly.  Modified function gave better results, and agents are able to move forward the goal. 
 
