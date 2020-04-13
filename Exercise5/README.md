@@ -60,3 +60,6 @@ If you want to seee evolved model, change line in ```balancebot_env.py``` file
 self.physicsClient = p.connect(p.GUI)  # Graphical version
 ```
 If you chose graphical version, you can see the learning process with gpu, the model will fall initially.  
+# Picture 
+Here you can see the screenshot from the simulation
+![Alt text](https://github.com/rodosha98/Behavioural-and-Cognitive-Robotics/blob/task4-6/Exercise5/balancebot.jpg "The balancebot simulation in the new environment.")
