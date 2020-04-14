@@ -1,8 +1,5 @@
 # Exercise 6: 
 ## Kinematic Simulations
->Dynamical simulator, like bullet, are necessary for simulating accurately the dynamics of articulated robots and for simulating the effect of collisions. In the case of wheeled robots moving on a flat surface, however, kinematic simulations can suffice. Kinematic simulations permit to reduce the simulation cost significantly with respect to dynamical simulations. For this reason, evorobotpy includes a set of environments involving wheeled robots that rely on a kinematic simulations implemented in C++.
-One of these environments is ErDiscrim that involves a Khepera robot, i.e. a small wheeled robot
-provided with infrared sensors (Mondada, Franzi & Ienne, 1993). The robot is situated on a flat arena surrounded by walls and including a cylindrical object. The task to be solved consists in finding and remaining near the cylinder. 
 
 >The source code (discrim.cpp, discrim.h, utilities.cpp, utilities.h, robot-env.cpp, robot-env.h, ErDiscrim.pxd, ErDiscrim.pyx, and setupErDiscrim.py) can be compiled from the ./lib folder with the following instructions:
 
