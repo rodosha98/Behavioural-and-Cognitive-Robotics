@@ -41,7 +41,7 @@ I've launched the algorithm for hopper and halfcheetah models and humanoid with 
 
 In evolutionary algorithms we must use the population of agents, learn them and pick only best ones, further learning is based on that ones (next generation). The whole process continues until certain moment. Original function are suitable for only reinforcement method, which is working with only one agent, so it can't produce evolutionary algorithms. 
 
-Modified function is adapted to fit evolutionary strategies. There is some changes in alive bonus estimation, additional constraints like angle estimation and feet collision(calculating feet contacts), body_minx. Strategies of estimation were rewritten for each class of robot.That is why the robots can reach their goal.
+Modified function is adapted to fit evolutionary strategies. There is some changes in alive bonus estimation, additional constraints like angle estimation and feet collision(calculating feet contacts), body_minx. Main contribution in my opinion gives the function that estimates the contact of the floor for each pair of limbs. Thus, that allows robot to avoid meaningless movements and be stable. Strategies of estimation were rewritten for each class of robot.That is why the robots can reach their goal.
 
 
 
