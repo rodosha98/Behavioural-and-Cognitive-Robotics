@@ -41,5 +41,6 @@ architecture = 3. Enables LSTM (Long Short Term Memory architecture)
 architecture = 0. Enables Feed forward neural architecture without memory.
 ```
 I've run experiments and noticed that sometimes the robot is able to reach the target, sometimes it moves very slowly and drives past the target, sometimes very quickly and can't reach. In all cases it can't stop near the target.
-> Explain how the behavior of evolved robots differ from those evolved with the LSTM architecture (i.e. the Long Short Term Memory architecture).
+# Difference between LTSM and Feed Forward models
+
 I've run experiments and noticed that sometimes the robot is able to reach the target, sometimes it moves very slowly and drives past the target, sometimes very quickly and can't reach. In all cases it can't stop near the target. The robot doesn't know where to stop due to it hasn't feedback part and can't estimate the state properly. That is why it can go through the target and skip it
